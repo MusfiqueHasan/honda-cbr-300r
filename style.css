@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 /* Inter 400 */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
     margin: 0;
@@ -32,4 +34,27 @@
 }
 .text-color{
     color:#E76F51 ;
+}
+.featured-line{
+    width: 70px;
+    border: 2px solid #E76F51;
+    border-radius: 1px;
+}
+
+.featured-bike{
+    padding-bottom: 100px;
+}
+
+.featured-btn{
+    background: #E76F51;
+    color: white;
+}
+.featured-btn:hover{
+    background:white;
+    border: 1px solid #E76F51 ;
+    color: #E76F51;
+}
+.client-img{
+    width: 149px;
+    height: 149px;
 }
