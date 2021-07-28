@@ -1,13 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honda-CBR-300R</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda-CBR-300R</title>
+  <link rel="shortcut icon" href="images/header-bike.png" type="image/x-icon">
+  <!-- Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ac4b8ef5f2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
+  <header class="header">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+      <div class="container mt-4">
+        <button class="navbar-toggler ms-auto border-0 " type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon nav-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white mx-3 heading" href="#">Home</a>
+            <a class="nav-link text-white mx-3 heading" href="#">Shop</a>
+            <a class="nav-link text-white mx-3 heading" href="#">News</a>
+            <a class="nav-link text-white mx-3 me-5 heading" href="#">Contact</a>
+            <button type="button" class="btn header-btn text-white px-4 py-1 ms-5" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel " class="fs-1 fw-bolder text-color ">Login</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                      placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn header-btn text-white">Sign in</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Main Header -->
+    <section class="container">
+
+      <div class="row row-cols-md-2 row-cols-1 mt-md-5">
+        <div class="col d-md-flex align-items-md-center justify-content-md-center  ">
+          <hgroup>
+            <p class="text-white-50 mt-3 heading-p ">Computer-controlled digital transistorized with electronic advance</p>
+            <h1 class="fw-bolder text-white mt-3 heading">Honda CBR 300R</h1>
+            <p class="text-white-50 mt-3 heading-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br> amet sint.
+              Velit officia consequat duis
+              enim velit mollit. Exercitation <br> veniam consequat sunt nostrud amet.</p>
+
+            <!-- Modal -->
+            <button type="button " class="header-btn btn text-white px-5 py-2 mt-3 rounded-3 " data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Purchase</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content h-75">
+                  <div class="modal-header ">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <i class="fas fa-shopping-cart text-color fs-1 text-center ">
+                      <h1 class="text-color fw-bolder ">Add to cart</h1>
+                    </i>
+                    <p class="text-danger fw-bolder ">If you want to Purchase. You Have to Login first</p>
+                    <button type="button" class="btn header-btn text-white px-5 py-1" data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal end -->
+          </hgroup>
+
+
+        </div>
+        <div class="col d-md-flex align-items-md-center mt-md-0 mt-5">
+          <div class="header-img mx-md-0 mx-auto">
+            <img class="img-fluid" src="images/header-bike.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Main Header end -->
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

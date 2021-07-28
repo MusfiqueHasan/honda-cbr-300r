@@ -1,5 +1,35 @@
+/* Poppins 600 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* Poppins 300 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* Inter 500 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/* Inter 400 */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.header{
+    background: #264653;
+    height: auto;
+    padding-bottom: 10%;
+}
+.header-img{
+    width:80%;
+}
+.header-btn{
+    background: #E76F51;
+}
+.heading, .header-btn{
+    font-family: 'Poppins', sans-serif;
+}
+.heading-p{
+    font-family: 'Poppins', sans-serif;
+}
+.text-color{
+    color:#E76F51 ;
 }
