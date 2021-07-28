@@ -14,7 +14,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Header */
 .header{
     background: #264653;
     height: auto;
@@ -35,13 +35,16 @@
 .text-color{
     color:#E76F51 ;
 }
+/* Header end */
+
+/* Main */
 .featured-line{
     width: 70px;
     border: 2px solid #E76F51;
     border-radius: 1px;
 }
 
-.featured-bike{
+.featured-bike, .latest-news, .happy-clients, .faq{
     padding-bottom: 100px;
 }
 
@@ -58,3 +61,14 @@
     width: 149px;
     height: 149px;
 }
+
+/* Main end */
+
+/* Footer */
+.footer{
+    height: 280px;
+    background: #0B0D17;
+}
+
+/* Footer end */
+
