@@ -19,19 +19,21 @@
 
   <header class="header">
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light  ">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container mt-4">
         <button class="navbar-toggler ms-auto border-0 " type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon nav-icon"></span>
+          data-bs-target="#navbarNavAltMarkup">
+          <i class="fas fa-bars fs-2 navbar-toggler-icon text-white"></i>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link text-white mx-3 heading" href="#">Home</a>
-            <a class="nav-link text-white mx-3 heading" href="#">Shop</a>
-            <a class="nav-link text-white mx-3 heading" href="#">News</a>
-            <a class="nav-link text-white mx-3 me-5 heading" href="#">Contact</a>
+            <a class="nav-link text-white mx-3 heading" href="#home">Home</a>
+            <a class="nav-link text-white mx-3 heading" href="#featured">Featured Bike</a>
+            <a class="nav-link text-white mx-3 heading" href="#news">News</a>
+            <a class="nav-link text-white mx-3 heading" href="#clients">Clients</a>
+            <a class="nav-link text-white mx-3 heading" href="#faq">FAQ</a>
+            <a class="nav-link text-white mx-3 me-5 heading" href="#popular">Popular Bikes</a>
             <button type="button" class="btn header-btn text-white px-4 py-1 ms-5" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login</button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -96,7 +98,7 @@
     </nav>
     <!-- Navbar end -->
     <!-- Main Header -->
-    <section class="container">
+    <section class="container" id="home">
 
       <div class="row row-cols-md-2 row-cols-1 mt-md-5">
         <div class="col d-md-flex align-items-md-center justify-content-md-center  ">
@@ -123,7 +125,8 @@
                     <i class="fas fa-shopping-cart text-color fs-1 text-center ">
                       <h1 class="text-color fw-bolder ">Add to cart</h1>
                     </i>
-                    <p class="text-danger fw-bolder ">If you want to Purchase. You Have to Login first</p>
+                    <p>No Items in cart</p>
+                    <p class="text-danger fw-bolder ">If you want to Purchase. You have to login first</p>
                     <button type="button" class="btn header-btn text-white px-5 py-1" data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login</button>
                   </div>
@@ -151,7 +154,7 @@
 
   <main>
     <!-- Featured section -->
-    <section class=" featured-bike container my-5">
+    <section class=" featured-bike container my-5" id="featured">
       <figcaption>
         <h1 class="heading text-center fs-1 fw-bolder">Fetured Bikes 2021</h1>
         <h6 class="heading text-color text-center fs-6 fw-bolder ">Best bike collection</h6>
@@ -182,7 +185,7 @@
     </section>
     <!-- Featured section end -->
     <!-- Latest News -->
-    <section class="latest-news container my-5">
+    <section class="latest-news container my-5" id="news">
       <h1 class="heading text-center fs-1 fw-bolder">Latest News</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4 mx-md-0 mx-3 mt-5">
         <div class="col">
@@ -223,7 +226,7 @@
     </section>
     <!-- Latest News end -->
     <!-- Happy clients -->
-    <section class="happy-clients container ">
+    <section class="happy-clients container " id="clients">
       <h1 class="heading fw-bolder text-center mb-5 ">Happy <span class="text-color heading fw-bolder">Clients
           says</span>
       </h1>
@@ -294,7 +297,7 @@
 
     <!-- FAQ -->
 
-    <section class="faq container">
+    <section class="faq container" id="faq">
       <h1 class="heading fw-bolder text-center mb-5 ">Frequently Asked <span
           class="text-color heading fw-bolder">Questions</span>
       </h1>
@@ -374,9 +377,295 @@
     </section>
     <!-- FAQ end -->
 
+    <!-- Popular Bikes -->
+    <section class="popular-bikes container" id="popular">
+
+      <div class="mx-md-0 mx-3">
+        <h1 class="fs-2 fw-bold mb-5 text-center">The most searched bikes</h1>
+        <nav class="mb-3 d-flex justify-content-center">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active fw-bold" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">Yamaha</button>
+            <button class="nav-link fw-bold" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Suzuki</button>
+            <button class="nav-link fw-bold" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+              type="button" role="tab" aria-controls="nav-contact" aria-selected="false">CBR 300R</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row  ">
+                    <div class="col-md-3  ">
+
+                      <div class="card  ">
+                        <img src="images/bike-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Royal Enfield Classic 350</h5>
+                          <p class="card-text ">$4 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Jawa 42</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-4.jpg" class="card-img-top py-1" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Honda Hness CB350</h5>
+                          <p class="card-text">$3.5 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-2.png" class="card-img-top py-1" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Bajaj Avenger Cruise 220</h5>
+                          <p class="card-text">$1.4 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-3  ">
+
+                      <div class="card  ">
+                        <img src="images/bike-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Royal Enfield Classic 350</h5>
+                          <p class="card-text ">$4 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Jawa 42</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row  ">
+                    <div class="col-md-3  ">
+
+                      <div class="card  ">
+                        <img src="images/bike-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Royal Enfield Classic 350</h5>
+                          <p class="card-text ">$4 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Suzuki Intruder</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-5.jpg" height="228" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Jawa 42</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                   
+
+
+                  </div>
+                </div>
+
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row  ">
+                    <div class="col-md-3  ">
+
+                      <div class="card  ">
+                        <img src="images/bike-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Royal Enfield Classic 350</h5>
+                          <p class="card-text ">$4 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Jawa 42</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-5.jpg" height="228" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Jawa 42</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none">
+
+                      <div class="card  ">
+                        <img src="images/bike-1.png" height="228" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Jawa 42</h5>
+                          <p class="card-text">$1 Lakh</p>
+                          <button type="button " class=" featured-btn btn  px-4 py-2 mt-3 rounded-3 ">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                   
+
+
+                  </div>
+                </div>
+
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+    <!-- Popular Bikes end -->
+
+    <section class="container">
+      
+    </section>
+
   </main>
 
   <footer class="footer">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-1 ">
+        <div class="col-md-7 d-flex flex-column justify-content-center align-items-center py-5 ">
+          <div class="w-75  ">
+            <div>
+              <a class="text-white-50 text-decoration-none mx-2 " href="">Download Now</a>
+              <a class="text-white-50 text-decoration-none mx-2 " href="">License</a>
+              <br>
+              <a class="text-white-50 text-decoration-none mx-2" href="">About</a>
+              <a class="text-white-50 text-decoration-none mx-2" href="">Features</a>
+              <a class="text-white-50 text-decoration-none mx-2" href="">Pricing</a>
+              <a class="text-white-50 text-decoration-none mx-2" href="">Careers</a>
+              <a class="text-white-50 text-decoration-none mx-2" href="">Help</a>
+              <a class="text-white-50 text-decoration-none mx-2" href="">Privacy Policy</a>
+            </div>
+            <div>
+              <p class="text-white-50 mx-2 mt-4 d-md-inline-block d-none ">© 2020 bike. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-5 d-md-flex flex-md-column justify-content-md-center align-items-md-center py-5 pt-md-5 pt-0">
+          <div
+            class="d-md-flex flex-md-column justify-content-md-center align-items-md-center d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white-50">Get the App</p>
+            <div><img class="img-fluid mb-3 " src="images/App Store Badge.jpg" alt=""></div>
+            <div><img class="img-fluid " src="images/Google Play Badge.jpg" alt=""></div>
+          </div>
+
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-white-50 mx-2 mt-4 d-md-none d-inline-block  ">© 2020 bike. All rights reserved</p>
+        </div>
+
+      </div>
+
+    </div>
 
   </footer>
 

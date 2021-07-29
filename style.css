@@ -14,6 +14,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    scroll-behavior: smooth;
+}
 /* Header */
 .header{
     background: #264653;
@@ -44,18 +47,19 @@
     border-radius: 1px;
 }
 
-.featured-bike, .latest-news, .happy-clients, .faq{
+.featured-bike, .latest-news, .happy-clients, .faq, .popular-bikes{
     padding-bottom: 100px;
 }
 
 .featured-btn{
-    background: #E76F51;
-    color: white;
+    background: white;
+    color: #E76F51;
+    border: 1px solid #E76F51 ;
 }
 .featured-btn:hover{
-    background:white;
-    border: 1px solid #E76F51 ;
-    color: #E76F51;
+    background:#E76F51;
+    
+    color: white ;
 }
 .client-img{
     width: 149px;
@@ -66,7 +70,7 @@
 
 /* Footer */
 .footer{
-    height: 280px;
+    height: auto;
     background: #0B0D17;
 }
 
