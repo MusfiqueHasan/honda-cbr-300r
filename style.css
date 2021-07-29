@@ -66,10 +66,15 @@ body{
     height: 149px;
 }
 
+.popular-bikes{
+    height: 100vh;
+}
+
 /* Main end */
 
 /* Footer */
 .footer{
+    margin-top: 100px;
     height: auto;
     background: #0B0D17;
 }
